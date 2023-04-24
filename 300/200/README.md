@@ -13,7 +13,13 @@ https://github.com/vanHeemstraSystems/publish-node-package
 [00:33] I'm just going to go ahead and copy this to the clipboard, and we'll paste it in. 
 
 ```
-
+echo "# publish-node-package" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin git@github.com:vanHeemstraSystems/publish-node-package.git
+git push -u origin main
 ```
 
 It'll run several of those commands and, then, we're ready to push.
