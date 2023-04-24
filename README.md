@@ -3,6 +3,8 @@ publish-node-package
 
 Based on "How to write an Open Source JavaScript Library" at https://egghead.io/courses/how-to-write-an-open-source-javascript-library
 
+Based on "starwars-names" at https://github.com/kentcdodds/starwars-names
+
 ## 100 - Introduction
 
 See [README.md](./100/README.md)
