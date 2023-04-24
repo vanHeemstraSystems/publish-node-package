@@ -4,15 +4,57 @@ Based on "Configuring npm and creating a package.json" at https://egghead.io/les
 
 In this lesson, you'll learn how to set up your machine to publish to npm so people can install your library. You'll configure some helpful defaults and use those to create a ```package.json``` file for your project using ```npm init```.
 
-[00:01] Now that we have our GitHub repo set up, let's go ahead and configure some things locally for npm to make publishing a little bit easier.
+Now that we have our GitHub repo set up, let's go ahead and configure some things locally for npm to make publishing a little bit easier.
 
-[00:08] Before I get started, one thing that you're going to need to make sure that you do is install Node. If you just search for Node.js, go to nodejs.org, you can install it here. Follow those prompts. If you type in npm--version and you don't get a version printed out, then you need to install Node. If you do, then you're just fine.
+Before I get started, one thing that you're going to need to make sure that you do is install Node. If you just search for Node.js, go to nodejs.org, you can install it here. Follow those prompts. If you type in npm --version and you don't get a version printed out, then you need to install Node. If you do, then you're just fine.
 
-[00:31] Let's go ahead and go to docs.npmjs.com. We'll go down to config. Here there are a ton of configuration options. We're interested in only a few of these, so we'll look for init. Here are the properties that we're interested in setting. The init author name, email, url, and license.
+Let's go ahead and go to https://docs.npmjs.com. We'll go down to config. Here there are a ton of configuration options. We're interested in only a few of these, so we'll look for init. Here are the properties that we're interested in setting. The init author name, email, url, and license.
 
-[00:52] To set these properties, we simply type npmset and then the name of the property. init-author-name, and then type in your name. We'll do the same for init-author-email and init-author-url, and npm set init.license is MIT.
+To set these properties, we simply type ```npm set``` and then the name of the property. init-author-name, and then type in your name. 
 
-[01:30] Let's go ahead and take a look at the npm RC file that was created for us. We have the author name, email, url, and license. One other property that I recommend setting is the save-exact property. Save-exact tells npm that whenever it is saving a dependency to your package.json, it will use the exact version rather than a version range.
+```
+npm set init-author-name 'Willem van Heemstra'
+```
+
+We'll do the same for init-author-email and init-author-url, and npm set init license is MIT.
+
+```
+npm set init-author-email 'wvanheemstra@icloud.com'
+```
+
+```
+npm set init-author-url 'https://github.com/vanHeemstraSystems'
+```
+
+```
+npm set init-license 'MIT'
+```
+
+Let's go ahead and take a look at the ```.npmrc``` file that was created for us. 
+
+```
+init-author-name=Willem van Heemstra
+init-author-email=wvanheemstra@icloud.com
+init-author-url=https://github.com/vanHeemstraSystems/
+init-license=MIT
+```
+.npmrc
+
+We have the author name, email, url, and license. One other property that I recommend setting is the save-exact property. Save-exact tells npm that whenever it is saving a dependency to your package.json, it will use the exact version rather than a version range.
+
+```
+npm set save-exact true
+```
+
+```
+init-author-name=Willem van Heemstra
+init-author-email=wvanheemstra@icloud.com
+init-author-url=https://github.com/vanHeemstraSystems/
+init-license=MIT
+save-exact=true
+```
+.npmrc
+
 
 [01:54] This protects you for when people don't follow semver properly or if there's a mistake in a release. This makes upgrading your dependencies full of fewer surprises. We're going to configure this default as well. npm set save-exact to true.
 
