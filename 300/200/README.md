@@ -10,7 +10,13 @@ In this lesson, you'll learn how to set up a GitHub account, create a new GitHub
 
 https://github.com/vanHeemstraSystems/publish-node-package
 
-[00:33] I'm just going to go ahead and copy this to the clipboard, and we'll paste it in. It'll run several of those commands and, then, we're ready to push.
+[00:33] I'm just going to go ahead and copy this to the clipboard, and we'll paste it in. 
+
+```
+
+```
+
+It'll run several of those commands and, then, we're ready to push.
 
 [00:42] Just to explain what this actually does is it creates a new file called "readme.md," and adds "Star Wars Names" to the top. Then, it initializes the Git repository locally. We add the .readme that we just created.
 
