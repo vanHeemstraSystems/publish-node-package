@@ -6,7 +6,7 @@ In this lesson, you'll learn how to set up a GitHub account, create a new GitHub
 
 [00:00] The first thing that we're going to want to do is create a GitHub repo for this library. We'll go to our browser and go to GitHub.com. If you don't have an account, you can sign up here.
 
-[00:11] I do have an account, so I'll just sign in. Then, we'll go ahead and create a new repository. We'll call it "Publish Node Package", or name it just the name of your library, and we'll write the description as "Publish Node Package." We'll go ahead and create the repository.
+[00:11] I do have an account, so I'll just sign in. Then, we'll go ahead and create a new repository. We'll call it "publish-node-package", or name it just the name of your library, and we'll write the description as "Publish Node Package." We'll go ahead and create the repository.
 
 https://github.com/vanHeemstraSystems/publish-node-package
 
