@@ -1,96 +1,97 @@
 # 300 - Building Our Application
 
 ## 100 - Introduction to How to Write an Open Source JavaScript Library
-1m 35s
 
+See [README.md](./100/README.md)
 
 ## 200 - Setting up GitHub
-1m 31s
 
+See [README.md](./200/README.md)
 
 ## 300 - Configuring npm and creating a package.json
-5m 1s
 
+See [README.md](./300/README.md)
 
 ## 400 - Creating the library and adding dependencies
-4m 46s
 
+See [README.md](./400/README.md)
 
 ## 500 - Pushing to GitHub
-2m 34s
 
+See [README.md](./500/README.md)
 
 ## 600 - Publishing to npm
-2m 36s
 
+See [README.md](./600/README.md)
 
 ## 700 - Releasing a version to GitHub
-2m 27s
 
+See [README.md](./700/README.md)
 
 ## 800 - Releasing a new version to npm
-3m 24s
 
+See [README.md](./800/README.md)
 
 ## 900 - Publishing a beta version
-3m 37s
 
+See [README.md](./900/README.md)
 
 ## 1000 - Setting up Unit Testing with Mocha and Chai
-2m 44s
 
+See [README.md](./1000/README.md)
 
 ## 1100 - Unit Testing with Mocha and Chai
-3m 1s
 
+See [README.md](./1100/README.md)
 
 ## 1200 - Automating Releases with semantic-release
-5m 49s
 
+See [README.md](./1200/README.md)
 
 ## 1300 - Writing conventional commits with commitizen
-4m 47s
 
+See [README.md](./1300/README.md)
 
 ## 1400 - Committing a new feature with commitizen
-3m 49s
 
+See [README.md](./1400/README.md)
 
 ## 1500 - Automatically Releasing with TravisCI
-3m 52s
 
+See [README.md](./1500/README.md)
 
 ## 1600 - Automatically running tests before commits with ghooks
-3m 2s
 
+See [README.md](./1600/README.md)
 
 ## 1700 - Adding code coverage recording with Istanbul
-2m 57s
 
+See [README.md](./1700/README.md)
 
 ## 1800 - Adding code coverage checking
-3m 24s
 
+See [README.md](./1800/README.md)
 
 ## 1900 - Add code coverage reporting
-3m 59s
 
+See [README.md](./1900/README.md)
 
 ## 2000 - Adding badges to your README
-2m 28s
 
+See [README.md](./2000/README.md)
 
 ## 2100 - Adding ES6 Support
-8m 35s
 
+See [README.md](./2100/README.md)
 
 ## 2200 - Adding ES6 Support to Tests using Mocha and Babel
-5m 2s
 
+See [README.md](./2200/README.md)
 
 ## 2300 - Limit Built Branches on Travis
-3m 38s
 
+See [README.md](./2300/README.md)
 
 ## 2400 - Add a browser build to an npm module
-6m 16s
+
+See [README.md](./2400/README.md)
