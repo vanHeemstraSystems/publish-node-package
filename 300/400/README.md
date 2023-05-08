@@ -139,7 +139,7 @@ The idea is that we want to have Star Wars names (see ```src/starwars-names.json
 
 We're going to require those Star Wars names to get the object that we need. 
 
-**Tip*, for the use of *assertions* see https://codereviewvideos.com/how-i-fixed-needs-an-import-assertion-of-type-json/
+**Tip*, for the use of *assertions* see https://codereviewvideos.com/how-i-fixed-needs-an-import-assertion-of-type-json/ and https://simonplend.com/import-json-in-es-modules/
 
 We'll simply say, 
 
