@@ -228,12 +228,17 @@ And invoke that over and over again, and we get a random Star Wars name every ti
 === WE ARE HERE ===
 
 
-It looks like from our manual testing that our library is working like we want it to. We're ready to commit these changes that we have and push them up to GitHub.
+It looks like from our manual testing that our library is working like we want it to. 
 
-[03:28] Before we do that, let's go ahead and review what we did. First, we created our index.js file that had our library in it. We moved the Star Wars names to the source directory right next to it. We brought that in. We exported it an all object, and this is what's going to be used when people require our module.
+We're ready to commit these changes that we have and push them up to GitHub.
 
-[03:48] We also created a random property. We're using a third party library to accomplish this. We installed this by saying MPM install--save unique random array. Just as a pro tip, there's a shortcut for this. We can say MPMI-S and that is the exact same as MPM install--save.
+Before we do that, let's go ahead and review what we did. 
 
-[04:08] You can also install multiple dependencies in a single command by listing the dependencies here. By adding save, it's saved our dependencies to our package JSON. We have configured our NPM to save exact by default, it's saved our dependency with the exact version, rather than having a caret or a tilde for our version.
+First, we created our index.js file that had our library in it. We moved the Star Wars names to the source directory right next to it. We brought that in. We exported it an all object, and this is what's going to be used when people require our module.
 
-[04:36] This protects us from surprises when somebody accidentally pushes a breaking change or does an honor sendver. That is how you create your first library.
+We also created a random property. We're using a third party library to accomplish this. We installed this by saying ```npm install --save unique-random-array```. Just as a pro tip, there's a shortcut for this. We can say ```npm i -s``` and that is the exact same as ```npm install --save```.
+
+You can also install multiple dependencies in a single command by listing the dependencies here. By adding save, it's saved our dependencies to our package JSON. We have configured our NPM to save exact by default, it's saved our dependency with the exact version, rather than having a caret or a tilde for our version.
+
+This protects us from surprises when somebody accidentally pushes a breaking change or does an honor sendver. That is how you create your first library.
+
