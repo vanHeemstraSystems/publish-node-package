@@ -24,7 +24,7 @@ git push -u origin main
 
 It'll run several of those commands and, then, we're ready to push.
 
-Just to explain what this actually does is it creates a new file called "readme.md," and adds "publish-node-package" to the top. Then, it initializes the Git repository locally. We add the README.md that we just created.
+Just to explain what this actually does is it creates a new file called "README.md," and adds "publish-node-package" to the top. Then, it initializes the Git repository locally. We add the README.md that we just created.
 
 We commit with the message "first commit." We add the remote origin so, this repository. Then, we push it to master setting our upstream.
 
