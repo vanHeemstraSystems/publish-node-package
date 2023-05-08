@@ -1,14 +1,29 @@
 # 500 - Pushing to GitHub
 
+Now that we have some work done locally, let's go ahead and commit this up to GitHub so that we can save our work. 
+
+If we type in:
+
+ ```
+ $ git status
+ ``` 
+ 
+ we're going to have a couple of things in here.
+
+One of those is this node_modules directory. It's not advisable to commit your node_modules directory for several reasons. One of these is collaborating with other users. Another is messing up your Git history with a lot of unnecessary changes that you may or may not actually want in your Git history.
+
+We're going to use NPM to make sure that we have our dependencies properly locally, and we will gitignore our node-modules. Let's create a new file here, called ```.gitignore```, and this will tell Git to ignore certain directories or files in our project.
+
+```
+node_modules
+```
+.gitignore
+
+We have added "node_modules" to .gitignore and, now, if we type ```git status``` those node modules are no longer there. 
+
 === WE ARE HERE ===
 
-[00:00] Now that we have some work done locally, let's go ahead and commit this up to GitHub so that we can save our work. If we type in "git-status," we're going to have a couple of things in here.
-
-[00:12] One of those is this node_modules directory. It's not advisable to commit your node_modules directory for several reasons. One of these is collaborating with other users. Another is messing up your Git history with a lot of unnecessary changes that you may or may not actually want in your Git history.
-
-[00:30] We're going to use NPM to make sure that we have our dependencies properly locally, and we will gitignore our node-modules. Let's create a new file here, called .gitignore, and this will tell Git to ignore certain directories or files in our project.
-
-[00:49] We can say "node-modules" and, now, if we say "git-status," that's no longer there. Now, we have this .gitignore file, which is just fine. What we need to do here, just as it illustrates for us, is we need to add these untracked files.
+Now, we have this .gitignore file, which is just fine. What we need to do here, just as it illustrates for us, is we need to add these untracked files.
 
 [01:05] We'll say "git-add." We'll just say -A to add everything. Now, if we say "git-status," it says we have a few new files, and we can commit these to our repository.
 
