@@ -148,6 +148,8 @@ In this tutorial we focus on writting **ES6 Modules (ESM)** always.
 
 **NOTE**: Local file imports require a file extension (e.g., .json).
 
+**NOTE**: Directory indexes must be fully specified (e.g., ../../utils/index.js instead of ../../utils). 
+
 We'll simply type (**Warning**: the below code requires NodeJS version 18 or higher!):
 
 ```
@@ -192,7 +194,9 @@ $ npm install --save unique-random-array
 
 Once that's installed it will be added as a node module right here. It will be added to our package JSON as well because we have the --save there. It's added as a dependency.
 
-Because we earlier configured our NPM to use save exact by default, we are saving the exact version here. We won't be surprised when somebody accidentally releases a breaking change. Let's go ahead and use this module. We'll say:
+Because we earlier configured our NPM to use save exact by default, we are saving the exact version here. We won't be surprised when somebody accidentally releases a breaking change.
+
+Let's go ahead and use this module. We'll say:
 
 ```
 import uniqueRandomArray from 'unique-random-array';
