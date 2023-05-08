@@ -246,14 +246,10 @@ We can type:
 
 ```
 > myModule.random();
-... a random star wars name is listed here ...
+... a random star wars name is listed here ... NOTE: This random function does not work quite yet in Node REPL.....
 ```
 
 And invoke that over and over again, and we get a random Star Wars name every time. 
-
-
-=== WE ARE HERE ===
-
 
 It looks like from our manual testing that our library is working like we want it to. 
 
