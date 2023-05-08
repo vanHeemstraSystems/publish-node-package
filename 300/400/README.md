@@ -202,14 +202,16 @@ We can type:
 
 ```
 $ node
-> var lib = require('./src/index.js');
+> let myModule;
 undefined
+> import('./src/index.js').then(module => { myModule = module };)
+Promise { <pending> }
 ```
 
 Now we can type:
 
 ```
-> lib.all
+> myModule.all();
 ... a full list of star wars names is listed here ...
 ``` 
 
@@ -218,7 +220,7 @@ And there are all of our random names.
 We can type: 
 
 ```
-> lib.random
+> myModule.random();
 ... a random star wars name is listed here ...
 ```
 
