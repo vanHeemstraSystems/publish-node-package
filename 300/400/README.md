@@ -137,11 +137,39 @@ src/starwars-names.json
 
 The idea is that we want to have Star Wars names (see ```src/starwars-names.json```) exported as part of the all, and we'll have a function that you can call to get a random Star Wars name.
 
+
+
+We're going to require those Star Wars names to get the object that we need. We'll simply say, 
+
+```
+var starWarsNames = require ('./starwars-names.json');
+
+module.exports = {
+    all,
+    random
+};
+```
+src/index.js
+
+This will create a JavaScript object for us. 
+
+We can simply assign that to the ```all``` property.
+
+```
+var starWarsNames = require ('./starwars-names.json');
+
+module.exports = {
+    all: starWarsNames,
+    random
+};
+```
+src/index.js
+
+
+
 === WE ARE HERE ===
 
-[00:59] I'm going to go ahead and move Star Wars names into our source directory here. We're going to require those Star Wars names to get the object that we need. We'll simply say, via Star Wars names equals require Star...Relative path Star Wars names.JSON. This will create a JavaScript object for us. We can simply assign that to the all property.
-
-[01:28] For random we need to create a function that will get a random item from this array. This is a solved problem. Instead of taking some time to figure out how to write this properly and then making sure that I cover it with tests properly, I'm going to use a micro library that has already done this.
+[01:28] For ```random``` we need to create a function that will get a random item from this array. This is a solved problem. Instead of taking some time to figure out how to write this properly and then making sure that I cover it with tests properly, I'm going to use a micro library that has already done this.
 
 [01:48] We're going to say MPM install--save to save this dependency to our package JSON. Then the dependency is called "unique random array." Once that's installed it will be added as a note module right here. It will be added to our package JSON as well because we have the --save there. It's added as a dependency.
 
