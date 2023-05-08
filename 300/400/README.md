@@ -20,9 +20,21 @@ module.exports = {};
 ```
 src/index.js
 
+We're going to have two **public API points** on our module. 
+
+First, we'll have ```all``` and then ```random```. 
+
+```
+module.exports = {
+    all,
+    random
+};
+```
+src/index.js
+
 === WE ARE HERE ===
 
-[00:34] We're going to have two public API points on our module. First, we'll have all and then random. These properties will be used to interact with our module. The idea is that we want to have our Star Wars names exported as part of the all, and we'll have a function that you can call to get a random Star Wars name.
+These properties will be used to interact with our module. The idea is that we want to have our Star Wars names exported as part of the all, and we'll have a function that you can call to get a random Star Wars name.
 
 [00:59] I'm going to go ahead and move Star Wars names into our source directory here. We're going to require those Star Wars names to get the object that we need. We'll simply say, via Star Wars names equals require Star...Relative path Star Wars names.JSON. This will create a JavaScript object for us. We can simply assign that to the all property.
 
@@ -30,7 +42,7 @@ src/index.js
 
 [01:48] We're going to say MPM install--save to save this dependency to our package JSON. Then the dependency is called "unique random array." Once that's installed it will be added as a note module right here. It will be added to our package JSON as well because we have the --save there. It's added as a dependency.
 
-[02:14] Because we earlier configured our MPM to use save exact by default, we are saving the exact version here. We won't be surprised when somebody accidentally releases a breaking change. Let's go ahead and use this module. We'll say "/unique random array equals require unique random array."
+[02:14] Because we earlier configured our NPM to use save exact by default, we are saving the exact version here. We won't be surprised when somebody accidentally releases a breaking change. Let's go ahead and use this module. We'll say "/unique random array equals require unique random array."
 
 [02:42] All that we need to do is say unique random array and pass our array. That will return us a function that we can call to get a random item from that array. If we want to manually test this really quick we can go into the node ripple. We can say var lib equals require source/index.js. Now we can say lib.all and there are all of our random names.
 
@@ -40,6 +52,6 @@ src/index.js
 
 [03:48] We also created a random property. We're using a third party library to accomplish this. We installed this by saying MPM install--save unique random array. Just as a pro tip, there's a shortcut for this. We can say MPMI-S and that is the exact same as MPM install--save.
 
-[04:08] You can also install multiple dependencies in a single command by listing the dependencies here. By adding save, it's saved our dependencies to our package JSON. We have configured our MPM to save exact by default, it's saved our dependency with the exact version, rather than having a caret or a tilde for our version.
+[04:08] You can also install multiple dependencies in a single command by listing the dependencies here. By adding save, it's saved our dependencies to our package JSON. We have configured our NPM to save exact by default, it's saved our dependency with the exact version, rather than having a caret or a tilde for our version.
 
 [04:36] This protects us from surprises when somebody accidentally pushes a breaking change or does an honor sendver. That is how you create your first library.
