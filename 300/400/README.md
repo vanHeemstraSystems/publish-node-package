@@ -178,14 +178,27 @@ Once that's installed it will be added as a node module right here. It will be a
 Because we earlier configured our NPM to use save exact by default, we are saving the exact version here. We won't be surprised when somebody accidentally releases a breaking change. Let's go ahead and use this module. We'll say:
 
 ```
-var uniqueRandomArray = require('unique-random-array');
+const { default: uniqueRandomArray } = require('unique-random-array');
 ...
+```
+src/index.js
+
+All that we need to do is say unique random array and pass our array. That will return us a function that we can call to get a random item from that array. 
+
+```
+const { default: uniqueRandomArray } = require('unique-random-array');
+var starWarsNames = require ('./starwars-names.json');
+
+module.exports = {
+    all: starWarsNames,
+    random: uniqueRandomArray(starWarsNames)
+};
 ```
 src/index.js
 
 === WE ARE HERE ===
 
-[02:42] All that we need to do is say unique random array and pass our array. That will return us a function that we can call to get a random item from that array. If we want to manually test this really quick we can go into the node ripple. We can say var lib equals require source/index.js. Now we can say lib.all and there are all of our random names.
+If we want to manually test this really quick we can go into the node ripple. We can say var lib equals require source/index.js. Now we can say lib.all and there are all of our random names.
 
 [03:09] We can say lib.random and invoke that over and over again, and we get a random Star Wars name every time. It looks like from our manual testing that our library is working like we want it to. We're ready to commit these changes that we have and push them up to GitHub.
 
