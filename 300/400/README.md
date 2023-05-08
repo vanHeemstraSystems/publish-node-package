@@ -32,9 +32,112 @@ module.exports = {
 ```
 src/index.js
 
-=== WE ARE HERE ===
+These properties will be used to interact with our module. 
 
-These properties will be used to interact with our module. The idea is that we want to have our Star Wars names exported as part of the all, and we'll have a function that you can call to get a random Star Wars name.
+For demonstration purposes of a functional module, create a file called ```starwars-names.json``` in the same directory ```src ```:
+
+```
+[
+  "4-LOM",
+  "Aayla Secura",
+  "Admiral Ackbar",
+  "Admiral Thrawn",
+  "Ahsoka Tano",
+  "Anakin Solo",
+  "Asajj Ventress",
+  "Aurra Sing",
+  "Senator Bail Organa",
+  "Barriss Offee",
+  "Bastila Shan",
+  "Ben Skywalker",
+  "Bib Fortuna",
+  "Biggs Darklighter",
+  "Boba Fett",
+  "Bossk",
+  "Brakiss",
+  "C-3PO",
+  "Cad Bane",
+  "Cade Skywalker",
+  "Callista Ming",
+  "Captain Rex",
+  "Carnor Jax",
+  "Chewbacca",
+  "Clone Commander Cody",
+  "Count Dooku",
+  "Darth Bane",
+  "Darth Krayt",
+  "Darth Maul",
+  "Darth Nihilus",
+  "Darth Vader",
+  "Dash Rendar",
+  "Dengar",
+  "Durge",
+  "Emperor Palpatine",
+  "Exar Kun",
+  "Galen Marek",
+  "General Crix Madine",
+  "General Dodonna",
+  "General Grievous",
+  "General Veers",
+  "Gilad Pellaeon",
+  "Grand Moff Tarkin",
+  "Greedo",
+  "Han Solo",
+  "IG 88",
+  "Jabba The Hutt",
+  "Jacen Solo",
+  "Jaina Solo",
+  "Jango Fett",
+  "Jarael",
+  "Jerec",
+  "Joruus C'Baoth",
+  "Ki-Adi-Mundi",
+  "Kir Kanos",
+  "Kit Fisto",
+  "Kyle Katarn",
+  "Kyp Durron",
+  "Lando Calrissian",
+  "Luke Skywalker",
+  "Luminara Unduli",
+  "Lumiya",
+  "Mace Windu",
+  "Mara Jade",
+  "Mission Vao",
+  "Natasi Daala",
+  "Nom Anor",
+  "Obi-Wan Kenobi",
+  "Padmé Amidala",
+  "Plo Koon",
+  "Pre Vizsla",
+  "Prince Xizor",
+  "Princess Leia",
+  "PROXY",
+  "Qui-Gon Jinn",
+  "Quinlan Vos",
+  "R2-D2",
+  "Rahm Kota",
+  "Revan",
+  "Satele Shan",
+  "Savage Opress",
+  "Sebulba",
+  "Shaak Ti",
+  "Shmi Skywalker",
+  "Talon Karrde",
+  "Ulic Qel-Droma",
+  "Visas Marr",
+  "Watto",
+  "Wedge Antilles",
+  "Yoda",
+  "Zam Wesell",
+  "Zayne Carrick",
+  "Zuckuss"
+]
+```
+src/starwars-names.json
+
+The idea is that we want to have Star Wars names (see ```src/starwars-names.json```) exported as part of the all, and we'll have a function that you can call to get a random Star Wars name.
+
+=== WE ARE HERE ===
 
 [00:59] I'm going to go ahead and move Star Wars names into our source directory here. We're going to require those Star Wars names to get the object that we need. We'll simply say, via Star Wars names equals require Star...Relative path Star Wars names.JSON. This will create a JavaScript object for us. We can simply assign that to the all property.
 
