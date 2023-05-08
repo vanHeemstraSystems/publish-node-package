@@ -59,16 +59,89 @@ This protects you for when people don't follow semver properly or if there's a m
 
 The last thing we need to do is we need to log in. If you don't have an npm account, then you need to sign up for one here at [npmjs.com](https://www.npmjs.com). I'm logged in, but if you go and you're not logged in, you don't have an account, you simply go to sign up and fill in this form.
 
-====== WE ARE HERE =====
+Then you can go to your terminal and run npm add-user. 
 
-[02:36] Then you can go to your terminal and run npm add-user. It will prompt you for your username, your password, and your email. This will be used to create your auth token and your npm RC, which I'm not going to show to you.
+```
+$ npm adduser
+```
 
-[02:57] Now that we have our npm configured we can created our package.json using npm init. This will walk you through creating your package.json. It has some logical defaults, and we can follow through with this.
+It will prompt you for your username, your password, and your email. This will be used to create your auth token and your npm RC, which I'm not going to show to you.
 
-[03:13] The name of our module, Star Wars Names, is just fine. The version, 1.00Our description we'll just say get random Star Wars names. The entry point is what is used when you require a module by its name, so Star Wars names. If we say index.js is our entry point, then we need to create an index.js in our root directory. When people require Star Wars Names, that's the file that we resolved for that required statement.
+Now that we have our npm configured we can created our package.json using ```npm init```. 
 
-[03:47] We're going to actually put it into our source/index.js, and then our test command we'll leave blank because we'll add tests later. We'll go ahead with the default for our git repository, and we'll say random Star Wars for our keywords. Our license is defaulted to MIT.
+```
+$ npm init
+```
 
-[04:07] Let's go ahead and say yes. If we look at our package.json, you'll notice we have our name, our version description, our main pointing to sourceindex.js. We don't have a test command yet. We'll fill that in later. The repository was filled in for us. The keywords were filled in. The author is prefilled based off of our init defaults, and license likewise. Our bugs and home page are derived from the repository that we specified.
+This will walk you through creating your package.json. It has some logical defaults, and we can follow through with this.
 
-[04:41] That is how you set up your npm locally and initialize your package. You simply sign up for an account on npm, set a couple of configuration properties to make creating this package.json a little easier, run npm in it, and follow through the prompt.
+The name of our module, ```publish-node-package```, is just fine. Click ENTER to accept the default value.
+
+The version, 1.0.0 is also OK, hence click ENTER again.
+
+Our description we'll just say ```Publish a Node Package.``` and click ENTER.
+
+The entry point is what is used when you require a module by its name, so require('publish-node-package'). If we say ```index.js``` is our entry point, then we need to create an index.js in our root directory. When people require 'publish-node-package', that's the file that we resolved for that required statement.
+
+We're going to actually put a index.js file into our source directory (src).
+
+```
+entry point (index.js): src/index.js 
+```
+
+And then our test command we'll leave blank because we'll add tests later. So, just click ENTER.
+
+We'll go ahead with our current git repository, so type ```git repository: https://github.com/vanHeemstraSystems/publish-node-package`` and click ENTER.
+
+And we'll say publish node package for our keywords. 
+
+```
+keywords: publish node package
+```
+
+Our license is defaulted to MIT, so just click ENTER.
+
+```
+license: MIT
+```
+
+You will be prompted with a summary of your new to be created package.json, like so:
+
+```
+{
+  "name": "publish-node-package",
+  "version": "1.0.0",
+  "description": "Publish a Node Package.",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vanHeemstraSystems/publish-node-package.git"
+  },
+  "keywords": [
+    "publish",
+    "node",
+    "package"
+  ],
+  "author": "Willem van Heemstra <wvanheemstra@icloud.com> (https://github.com/vanHeemstraSystems/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vanHeemstraSystems/publish-node-package/issues"
+  },
+  "homepage": "https://github.com/vanHeemstraSystems/publish-node-package#readme"
+}
+```
+
+Let's go ahead and say yes, by clicking ENTER. 
+
+```
+Is this OK? (yes)
+```
+
+If we look at our package.json, you'll notice we have our name, our version, a description, our main pointing to ```src/index.js```. We don't have a test command yet. We'll fill that in later. 
+
+The repository was filled in for us. The keywords were filled in. The author is prefilled based off of our init defaults, and license likewise. Our bugs and home page are derived from the repository that we specified.
+
+That is how you set up your npm locally and initialize your package. You simply sign up for an account on npm, set a couple of configuration properties to make creating this package.json a little easier, run npm init, and follow through the prompt.

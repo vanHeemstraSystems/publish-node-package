@@ -1,0 +1,24 @@
+{
+  "name": "publish-node-package",
+  "version": "1.0.0",
+  "description": "Publish a Node Package.",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vanHeemstraSystems/publish-node-package.git"
+  },
+  "keywords": [
+    "publish",
+    "node",
+    "package"
+  ],
+  "author": "Willem van Heemstra <wvanheemstra@icloud.com> (https://github.com/vanHeemstraSystems/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vanHeemstraSystems/publish-node-package/issues"
+  },
+  "homepage": "https://github.com/vanHeemstraSystems/publish-node-package#readme"
+}
