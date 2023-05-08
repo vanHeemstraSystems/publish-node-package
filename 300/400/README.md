@@ -146,6 +146,8 @@ We're going to require those Star Wars names to get the object that we need.
 
 In this tutorial we focus on writting **ES6 Modules (ESM)** always.
 
+**NOTE**: Local file imports require a file extension (e.g., .json).
+
 We'll simply type (**Warning**: the below code requires NodeJS version 18 or higher!):
 
 ```
