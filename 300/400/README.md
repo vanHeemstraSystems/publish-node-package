@@ -144,8 +144,8 @@ We're going to require those Star Wars names to get the object that we need.
 We'll simply say, 
 
 ```
-var starWarsNames = require ('./starwars-names.json') assert {
-  type: 'json'
+import starWarsNames from './starwars-names.json'assert {
+    type: 'json'
 };
 
 module.exports = {
@@ -160,8 +160,8 @@ This will create a JavaScript object for us.
 We can simply assign that to the ```all``` property.
 
 ```
-var starWarsNames = require ('./starwars-names.json') assert {
-  type: 'json'
+import starWarsNames from './starwars-names.json'assert {
+    type: 'json'
 };
 
 module.exports = {
