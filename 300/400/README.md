@@ -137,10 +137,16 @@ src/starwars-names.json
 
 The idea is that we want to have Star Wars names (see ```src/starwars-names.json```) exported as part of the all, and we'll have a function that you can call to get a random Star Wars name.
 
-We're going to require those Star Wars names to get the object that we need. We'll simply say, 
+We're going to require those Star Wars names to get the object that we need. 
+
+**Tip*, for the use of *assertions* see https://codereviewvideos.com/how-i-fixed-needs-an-import-assertion-of-type-json/
+
+We'll simply say, 
 
 ```
-var starWarsNames = require ('./starwars-names.json');
+var starWarsNames = require ('./starwars-names.json') assert {
+  type: 'json'
+};
 
 module.exports = {
     all,
@@ -154,7 +160,9 @@ This will create a JavaScript object for us.
 We can simply assign that to the ```all``` property.
 
 ```
-var starWarsNames = require ('./starwars-names.json');
+var starWarsNames = require ('./starwars-names.json') assert {
+  type: 'json'
+};
 
 module.exports = {
     all: starWarsNames,
@@ -185,7 +193,9 @@ All that we need to do is say unique random array and pass our array. That will 
 
 ```
 import uniqueRandomArray from 'unique-random-array';
-import starWarsNames from './starwars-names.json';
+import starWarsNames from './starwars-names.json' assert {
+  type: 'json'
+};
 
 module.exports = {
     all: starWarsNames,
@@ -204,8 +214,12 @@ We can type:
 $ node
 > let myModule;
 undefined
-> import('./src/index.js').then(module => { myModule = module };)
-Promise { <pending> }
+> import('./src/index.js').then(module => { myModule = module });
+Promise {
+  <pending>,
+  [Symbol(async_id_symbol)]: 324,
+  [Symbol(trigger_async_id_symbol)]: 308
+}
 ```
 
 Now we can type:
