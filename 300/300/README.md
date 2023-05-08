@@ -55,12 +55,11 @@ save-exact=true
 ```
 .npmrc
 
+This protects you for when people don't follow semver properly or if there's a mistake in a release. This makes upgrading your dependencies full of fewer surprises. We're going to configure this default as well. npm set ```save-exact``` to true. Now we have that save-exact.
+
+The last thing we need to do is we need to log in. If you don't have an npm account, then you need to sign up for one here at [npmjs.com](https://www.npmjs.com). I'm logged in, but if you go and you're not logged in, you don't have an account, you simply go to sign up and fill in this form.
 
 ====== WE ARE HERE =====
-
-[01:54] This protects you for when people don't follow semver properly or if there's a mistake in a release. This makes upgrading your dependencies full of fewer surprises. We're going to configure this default as well. npm set save-exact to true.
-
-[02:13] Now we have that save-exact, the last thing we need to do is we need to log in. If you don't have an npm account, then you need to sign up for one here at npmjs.com. I'm logged in, but if you go and you're not logged in, you don't have an account, you simply go to sign up and fill in this form.
 
 [02:36] Then you can go to your terminal and run npm add-user. It will prompt you for your username, your password, and your email. This will be used to create your auth token and your npm RC, which I'm not going to show to you.
 
