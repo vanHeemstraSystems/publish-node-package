@@ -1,12 +1,9 @@
-//import uniqueRandomArray from 'unique-random-array';
-const uniqueRandomArray = await import('unique-random-array');
+import uniqueRandomArray from 'unique-random-array';
 const starWarsNames = await import('./starwars-names.json', { 
     assert: {
         type: 'json'
     }
 });
 
-module.exports = {
-    all: starWarsNames,
-    random: uniqueRandomArray(starWarsNames)
-};
+export const all = () => { return starWarsNames };
+export const random = () => { return uniqueRandomArray(starWarsNames) };

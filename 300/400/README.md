@@ -159,10 +159,8 @@ const starWarsNames = await import('./starwars-names.json', {
     }
 });
 
-module.exports = {
-    all,
-    random
-};
+export const all = () => { };
+export const random = () => { };
 ```
 src/index.js
 
@@ -177,10 +175,8 @@ const starWarsNames = await import('./starwars-names.json', {
     }
 });
 
-module.exports = {
-    all: starWarsNames,
-    random
-};
+export const all = () => { return starWarsNames };
+export const random = () => { };
 ```
 src/index.js
 
@@ -214,10 +210,8 @@ const starWarsNames = await import('./starwars-names.json', {
     }
 });
 
-module.exports = {
-    all: starWarsNames,
-    random: uniqueRandomArray(starWarsNames)
-};
+export const all = () => { return starWarsNames };
+export const random = () => { return uniqueRandomArray(starWarsNames) };
 ```
 src/index.js
 
