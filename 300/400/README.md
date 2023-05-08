@@ -144,9 +144,11 @@ We're going to require those Star Wars names to get the object that we need.
 We'll simply say, 
 
 ```
-import starWarsNames from './starwars-names.json'assert {
-    type: 'json'
-};
+const starWarsNames = await import('./starwars-names.json', { 
+    assert: {
+        type: 'json'
+    }
+});
 
 module.exports = {
     all,
@@ -160,9 +162,11 @@ This will create a JavaScript object for us.
 We can simply assign that to the ```all``` property.
 
 ```
-import starWarsNames from './starwars-names.json'assert {
-    type: 'json'
-};
+const starWarsNames = await import('./starwars-names.json', { 
+    assert: {
+        type: 'json'
+    }
+});
 
 module.exports = {
     all: starWarsNames,
@@ -193,9 +197,11 @@ All that we need to do is say unique random array and pass our array. That will 
 
 ```
 import uniqueRandomArray from 'unique-random-array';
-import starWarsNames from './starwars-names.json' assert {
-  type: 'json'
-};
+const starWarsNames = await import('./starwars-names.json', { 
+    assert: {
+        type: 'json'
+    }
+});
 
 module.exports = {
     all: starWarsNames,
