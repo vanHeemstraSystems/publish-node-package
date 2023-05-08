@@ -4,9 +4,23 @@ Based on "Creating the library and adding dependencies" at https://egghead.io/le
 
 With our NPM configured and our Package JSON created, we are ready to start writing this library.
 
-=== WE ARE HERE ===
 
-[00:07] We need to create our main file for our library. We're going to create a source/index.js. I file in a source directory called index.js. This is where the main export for our library will live. When we say module to exports as common js syntax, this is the object that will be exported when people require our module.
+We need to create our main file for our library. We're going to create a source / index.js. I create a file in a source directory called index.js. 
+
+```
+$ touch src/index.js
+```
+
+This is where the main export for our library will live. 
+
+When we add ```module.exports = {};``` to src/index.js as common js syntax, this is the object that will be exported when people require our module.
+
+```
+module.exports = {};
+```
+src/index.js
+
+=== WE ARE HERE ===
 
 [00:34] We're going to have two public API points on our module. First, we'll have all and then random. These properties will be used to interact with our module. The idea is that we want to have our Star Wars names exported as part of the all, and we'll have a function that you can call to get a random Star Wars name.
 
