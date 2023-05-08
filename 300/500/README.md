@@ -21,16 +21,40 @@ node_modules
 
 We have added "node_modules" to .gitignore and, now, if we type ```git status``` those node modules are no longer there. 
 
-=== WE ARE HERE ===
-
 Now, we have this .gitignore file, which is just fine. What we need to do here, just as it illustrates for us, is we need to add these untracked files.
 
-[01:05] We'll say "git-add." We'll just say -A to add everything. Now, if we say "git-status," it says we have a few new files, and we can commit these to our repository.
+We'll type:
 
-[01:17] We'll simply say "git-commit," and, then, we'll add a message of "adding the library." Now, if we say "git-status," we have one commit ahead of our origin master. We can git-push, and that will update our origin master.
+```
+$ git add -A
+```
 
-[01:36] Now, if we go to our Star Wars Names repository, we have a source directory, a git-ignore, and a package JSON, everything that we need for our library to actually be published and used by consumers. However, we don't want to force people to go to our repository, go to the source directory, open up the index, copy this.
+We'll just typed -A to add everything. 
 
-[01:58] This isn't something that we want people to do. We want them to be able to install our library from NPM. Next, we're going to publish this library to NPM.
+Now, if we type ```git status``` it says we have a few new files, and we can commit these to our repository.
 
-[02:10] In review, all that we needed to do was create a .gitignore file that specified node_modules as an ignored directory. Then, we said, "git-add" to add the untracked files, the new files that we created. Then we have a git-commit to commit these files to our repository. Finally, we pushed these up to the GitHub repository.
+We'll simply type:
+
+```
+git commit -m "Adding the library"
+``` 
+ 
+and, then, we'll add a message of "adding the library." 
+
+Now, if we type:
+
+```
+git status
+```
+
+We have one commit ahead of our origin master. 
+
+We can ```git push```, and that will update our origin master.
+
+Now, if we go to our publish-node-package repository, we have a source directory, a .gitignore file, and a package.json file, everything that we need for our library to actually be published and used by consumers. However, we don't want to force people to go to our repository, go to the source directory, open up the index, copy this.
+
+This isn't something that we want people to do. 
+
+We want them to be able to install our library from NPM. Next, we're going to publish this library to NPM.
+
+In review, all that we needed to do was create a .gitignore file that specified node_modules as an ignored directory. Then, we said, "git add" to add the untracked files, the new files that we created. Then we have a git commit to commit these files to our repository. Finally, we pushed these up to the GitHub repository.
