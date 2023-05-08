@@ -241,4 +241,3 @@ We also created a random property. We're using a third party library to accompli
 You can also install multiple dependencies in a single command by listing the dependencies here. By adding save, it's saved our dependencies to our package JSON. We have configured our NPM to save exact by default, it's saved our dependency with the exact version, rather than having a caret or a tilde for our version.
 
 This protects us from surprises when somebody accidentally pushes a breaking change or does an honor sendver. That is how you create your first library.
-
