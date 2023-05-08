@@ -6,4 +6,5 @@ const starWarsNames = await import('./starwars-names.json', {
 });
 
 export const all = () => { return starWarsNames };
-export const random = () => { return uniqueRandomArray(starWarsNames) };
+//export let random = uniqueRandomArray(starWarsNames);
+export let random = uniqueRandomArray([1, 2, 3, 4]); // FOR TESTING ONLY
