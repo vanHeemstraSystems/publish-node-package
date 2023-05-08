@@ -141,6 +141,11 @@ We're going to require those Star Wars names to get the object that we need.
 
 **Tip*, for the use of *assertions* see https://codereviewvideos.com/how-i-fixed-needs-an-import-assertion-of-type-json/ and https://simonplend.com/import-json-in-es-modules/
 
+
+**NOTE**: Writing CommonJS code is legacy, whereas modern NodeJS modules are written as ES6 Modules. This article explains how to rewrite Common JS modules (CJS) to ES6 Modules (ESM): https://electerious.medium.com/from-commonjs-to-es-modules-how-to-modernize-your-node-js-app-ad8cdd4fb662
+
+In this tutorial we focus on writting **ES6 Modules (ESM)** always.
+
 We'll simply type (**Warning**: the below code requires NodeJS version 18 or higher!):
 
 ```

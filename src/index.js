@@ -1,4 +1,5 @@
-import uniqueRandomArray from 'unique-random-array';
+//import uniqueRandomArray from 'unique-random-array';
+const uniqueRandomArray = await import('unique-random-array');
 const starWarsNames = await import('./starwars-names.json', { 
     assert: {
         type: 'json'
