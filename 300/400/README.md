@@ -137,8 +137,6 @@ src/starwars-names.json
 
 The idea is that we want to have Star Wars names (see ```src/starwars-names.json```) exported as part of the all, and we'll have a function that you can call to get a random Star Wars name.
 
-
-
 We're going to require those Star Wars names to get the object that we need. We'll simply say, 
 
 ```
@@ -178,7 +176,7 @@ Once that's installed it will be added as a node module right here. It will be a
 Because we earlier configured our NPM to use save exact by default, we are saving the exact version here. We won't be surprised when somebody accidentally releases a breaking change. Let's go ahead and use this module. We'll say:
 
 ```
-const { default: uniqueRandomArray } = require('unique-random-array');
+import uniqueRandomArray from 'unique-random-array';
 ...
 ```
 src/index.js
@@ -186,8 +184,8 @@ src/index.js
 All that we need to do is say unique random array and pass our array. That will return us a function that we can call to get a random item from that array. 
 
 ```
-const { default: uniqueRandomArray } = require('unique-random-array');
-var starWarsNames = require ('./starwars-names.json');
+import uniqueRandomArray from 'unique-random-array';
+import starWarsNames from './starwars-names.json';
 
 module.exports = {
     all: starWarsNames,
@@ -196,11 +194,41 @@ module.exports = {
 ```
 src/index.js
 
+If we want to manually test this really quick we can go into the node repl. 
+
+See also https://copyprogramming.com/howto/solving-the-cannot-use-import-statement-inside-the-node-js-repl-error-a-comprehensive-guide
+
+We can type:
+
+```
+$ node
+> var lib = require('./src/index.js');
+undefined
+```
+
+Now we can type:
+
+```
+> lib.all
+... a full list of star wars names is listed here ...
+``` 
+
+And there are all of our random names.
+
+We can type: 
+
+```
+> lib.random
+... a random star wars name is listed here ...
+```
+
+And invoke that over and over again, and we get a random Star Wars name every time. 
+
+
 === WE ARE HERE ===
 
-If we want to manually test this really quick we can go into the node ripple. We can say var lib equals require source/index.js. Now we can say lib.all and there are all of our random names.
 
-[03:09] We can say lib.random and invoke that over and over again, and we get a random Star Wars name every time. It looks like from our manual testing that our library is working like we want it to. We're ready to commit these changes that we have and push them up to GitHub.
+It looks like from our manual testing that our library is working like we want it to. We're ready to commit these changes that we have and push them up to GitHub.
 
 [03:28] Before we do that, let's go ahead and review what we did. First, we created our index.js file that had our library in it. We moved the Star Wars names to the source directory right next to it. We brought that in. We exported it an all object, and this is what's going to be used when people require our module.
 

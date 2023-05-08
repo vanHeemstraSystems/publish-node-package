@@ -144,4 +144,17 @@ If we look at our package.json, you'll notice we have our name, our version, a d
 
 The repository was filled in for us. The keywords were filled in. The author is prefilled based off of our init defaults, and license likewise. Our bugs and home page are derived from the repository that we specified.
 
+To allow the more modern use of ```import``` for modules, add the following to your package.json:
+
+```
+...
+"type": "module",
+...
+```
+package.json
+
+This tells Node.js that your files are ES modules. After adding the "type" field to your package.json file, you can now use the ```import``` statement in your modules.
+
+Run ```npm install``` again so as to update the ```package-lock.json``` file.
+
 That is how you set up your npm locally and initialize your package. You simply sign up for an account on npm, set a couple of configuration properties to make creating this package.json a little easier, run npm init, and follow through the prompt.
