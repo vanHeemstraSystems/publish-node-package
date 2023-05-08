@@ -141,7 +141,7 @@ We're going to require those Star Wars names to get the object that we need.
 
 **Tip*, for the use of *assertions* see https://codereviewvideos.com/how-i-fixed-needs-an-import-assertion-of-type-json/ and https://simonplend.com/import-json-in-es-modules/
 
-We'll simply say, 
+We'll simply type (**Warning**: the below code requires NodeJS version 18 or higher!):
 
 ```
 const starWarsNames = await import('./starwars-names.json', { 
