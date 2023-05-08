@@ -165,15 +165,25 @@ module.exports = {
 ```
 src/index.js
 
+For ```random``` we need to create a function that will get a random item from this array. This is a solved problem. Instead of taking some time to figure out how to write this properly and then making sure that I cover it with tests properly, I'm going to use a micro library that has already done this.
 
+We're going to say NPM install--save to save this dependency to our package JSON. Then the dependency is called "unique random array." 
+
+```
+$ npm install --save unique-random-array
+```
+
+Once that's installed it will be added as a node module right here. It will be added to our package JSON as well because we have the --save there. It's added as a dependency.
+
+Because we earlier configured our NPM to use save exact by default, we are saving the exact version here. We won't be surprised when somebody accidentally releases a breaking change. Let's go ahead and use this module. We'll say:
+
+```
+var uniqueRandomArray = require('unique-random-array');
+...
+```
+src/index.js
 
 === WE ARE HERE ===
-
-[01:28] For ```random``` we need to create a function that will get a random item from this array. This is a solved problem. Instead of taking some time to figure out how to write this properly and then making sure that I cover it with tests properly, I'm going to use a micro library that has already done this.
-
-[01:48] We're going to say MPM install--save to save this dependency to our package JSON. Then the dependency is called "unique random array." Once that's installed it will be added as a note module right here. It will be added to our package JSON as well because we have the --save there. It's added as a dependency.
-
-[02:14] Because we earlier configured our NPM to use save exact by default, we are saving the exact version here. We won't be surprised when somebody accidentally releases a breaking change. Let's go ahead and use this module. We'll say "/unique random array equals require unique random array."
 
 [02:42] All that we need to do is say unique random array and pass our array. That will return us a function that we can call to get a random item from that array. If we want to manually test this really quick we can go into the node ripple. We can say var lib equals require source/index.js. Now we can say lib.all and there are all of our random names.
 

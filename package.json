@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/vanHeemstraSystems/publish-node-package/issues"
   },
-  "homepage": "https://github.com/vanHeemstraSystems/publish-node-package#readme"
+  "homepage": "https://github.com/vanHeemstraSystems/publish-node-package#readme",
+  "dependencies": {
+    "unique-random-array": "3.0.0"
+  }
 }
